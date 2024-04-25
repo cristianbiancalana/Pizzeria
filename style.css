@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color:rgb(206, 170, 116);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+
+.titulo{
+
+    margin-top: 5px;
+    padding: 10px;
+    width: 500px;
+    height: 100px;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.titulo h1{
+
+    font-size: 40px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.titulo img{
+    margin: 0 0 -15px;
+    padding: 5px;
+    height: 50px;
+}
+
+.cuerpo{
+    display: grid;
+    grid-column: 2fr;
+    width: 800p;
+    margin-top: 5%;
+}
+
+.cuerpo h2{
+    justify-content:space-around;
+    align-items: center;
+    margin: -30px auto;
+}
+
+.cuerpo ul{
+    justify-content:space-around;
+    align-items: center;
+    list-style:none;
+}
+
+.cuerpo li{
+
+    font-weight:550;
+    font-size: 20px;
+}
+
+.cuerpo p{
+    font-style: italic;
+    font-size: 10px;
+}
+
+.separate{
+    border:solid 1px black;
+    width: 700px;
+    margin: 30px 0 auto;
+   
+}
+
+.mnapo img, 
+.mjyq img,
+.mfuga img,
+.mpalmito img {
+    margin-left: 800px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 0 auto;
+    width: 0px;
+    height: 0px;
+    border-radius: 10px;
+}
+
+.mnapo:hover img,
+.mjyq:hover img,
+.mfuga:hover img,
+.mpalmito:hover img{
+    animation: preview 1s alternate linear ;
+    animation-fill-mode: forwards;
+    transition: width 0.3s, height 0.3s
+}
+@keyframes preview {
+    0% {width: 25px;
+        height: 25px;  
+        transform: translateY(0);
+        transform: scale(0.5);}
+    25%{width: 50px;
+        height: 50px;
+        transform: translateY(25px);
+        transform: scale(0.75);}
+    50%{width: 75px;
+        height: 75px;
+        transform: translateY(50px);
+        transform: scale(1);}
+    75%{width: 85px;
+        height: 85px;
+        transform: translateY(75px);
+        transform: scale(1.25);}
+    100%{width: 100px;
+         height: 100px;
+         transform: translateY(100px);
+         transform: scale(1.5);}
+}
+
+
+
